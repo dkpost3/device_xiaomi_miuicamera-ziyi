@@ -1,0 +1,30 @@
+From 9715d7dcd1abbdc0ef88246a3e51b0cfea8cfaa0 Mon Sep 17 00:00:00 2001
+From: Arian <arian.kulmer@web.de>
+Date: Sat, 25 Oct 2025 05:24:07 +0000
+Subject: [PATCH 2/2] Support third party galleries
+
+---
+ smali_classes2/com/android/camera/storage/Storage.smali | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/smali_classes2/com/android/camera/storage/Storage.smali b/smali_classes2/com/android/camera/storage/Storage.smali
+index 14186529..f467ebb2 100644
+--- a/smali_classes2/com/android/camera/storage/Storage.smali
++++ b/smali_classes2/com/android/camera/storage/Storage.smali
+@@ -5740,11 +5740,11 @@
+     .line 6
+     .line 7
+     .line 8
+-    const-string v1, "com.miui.gallery"
++    const-string v1, "android.intent.category.APP_GALLERY"
+ 
+     .line 9
+     .line 10
+-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
++    invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+ 
+     .line 11
+     .line 12
+-- 
+2.34.1
+
