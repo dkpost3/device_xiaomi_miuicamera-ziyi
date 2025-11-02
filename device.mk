@@ -6,7 +6,7 @@
 
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/redwood-miuicamera/BoardConfig.mk)
-$(call inherit-product, vendor/xiaomi/redwood-miuicamera/vendor/vendor-vendor.mk)
+$(call inherit-product, vendor/xiaomi/redwood-miuicamera/vendor/redwood-miuicamera-vendor.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
