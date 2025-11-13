@@ -12,3 +12,4 @@
         <permission name="android.permission.TURN_SCREEN_ON" />
     </privapp-permissions>
 </permissions>
+

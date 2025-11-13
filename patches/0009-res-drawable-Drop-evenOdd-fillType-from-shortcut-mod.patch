@@ -11,6 +11,62 @@ Signed-off-by: Fuutao <fuutaoao@gmail.com>
  res/drawable/shortcut_video_mode.xml        | 1 -
  4 files changed, 4 deletions(-)
 
+diff --git a/res/drawable/shortcat_cosmetic_mirror.xml b/res/drawable/shortcat_cosmetic_mirror.xml
+index af90307a..6d999f04 100644
+--- a/res/drawable/shortcat_cosmetic_mirror.xml
++++ b/res/drawable/shortcat_cosmetic_mirror.xml
+@@ -1,6 +1,17 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<vector android:height="88.0dip" android:width="88.0dip" android:viewportWidth="88.0" android:viewportHeight="88.0"
+-  xmlns:android="http://schemas.android.com/apk/res/android">
+-    <path android:fillColor="#ff000000" android:pathData="M44,44m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.06361997" android:fillType="evenOdd" />
+-    <path android:fillColor="#ff000000" android:pathData="M56 39C56 46.1797 50.1797 52 43 52C35.8203 52 30 46.1797 30 39C30 31.8203 35.8203 26 43 26C50.1797 26 56 31.8203 56 39ZM60 39C60 48.3888 52.3888 56 43 56C33.6112 56 26 48.3888 26 39C26 29.6112 33.6112 22 43 22C52.3888 22 60 29.6112 60 39ZM27 60C26.4477 60 26 60.4477 26 61V63C26 63.5523 26.4477 64 27 64H59C59.5523 64 60 63.5523 60 63V61C60 60.4477 59.5523 60 59 60H27Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+-</vector>
+\ No newline at end of file
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@android:color/white" />
++    <foreground>
++        <inset android:inset="10%">
++            <vector
++                android:width="88dp"
++                android:height="88dp"
++                android:viewportWidth="88"
++                android:viewportHeight="88">
++                <path
++                    android:pathData="M56 39C56 46.1797 50.1797 52 43 52C35.8203 52 30 46.1797 30 39C30 31.8203 35.8203 26 43 26C50.1797 26 56 31.8203 56 39ZM60 39C60 48.3888 52.3888 56 43 56C33.6112 56 26 48.3888 26 39C26 29.6112 33.6112 22 43 22C52.3888 22 60 29.6112 60 39ZM27 60C26.4477 60 26 60.4477 26 61V63C26 63.5523 26.4477 64 27 64H59C59.5523 64 60 63.5523 60 63V61C60 60.4477 59.5523 60 59 60H27Z"
++                    android:fillColor="@android:color/black" />
++            </vector>
++        </inset>
++    </foreground>
++</adaptive-icon>
+diff --git a/res/drawable-night/shortcat_cosmetic_mirror.xml b/res/drawable-night/shortcat_cosmetic_mirror.xml
+--- a/res/drawable-night/shortcat_cosmetic_mirror.xml
++++ b/res/drawable-night/shortcat_cosmetic_mirror.xml
+@@ -1,7 +1,17 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<vector android:height="86.0dip" android:width="86.0dip" android:viewportWidth="86.0" android:viewportHeight="86.0"
+-  xmlns:android="http://schemas.android.com/apk/res/android">
+-    <path android:fillColor="#ffc9d7ff" android:pathData="M43,43m-43,0a43,43 0,1 1,86 0a43,43 0,1 1,-86 0" android:fillAlpha="0.21" />
+-    <path android:fillColor="#ffffffff" android:pathData="M27,60C26.448,60 26,60.448 26,61V62C26,62.552 26.448,63 27,63H59C59.552,63 60,62.552 60,62V61C60,60.448 59.552,60 59,60H27Z" android:fillType="evenOdd" />
+-    <path android:fillColor="#00000000" android:pathData="M58.5,40C58.5,48.56 51.56,55.5 43,55.5C34.44,55.5 27.5,48.56 27.5,40C27.5,31.44 34.44,24.5 43,24.5C51.56,24.5 58.5,31.44 58.5,40Z" android:strokeColor="#ffffffff" android:strokeWidth="3.0" />
+-</vector>
+\ No newline at end of file
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@android:color/white" />
++    <foreground>
++        <inset android:inset="10%">
++            <vector
++                android:width="86dp"
++                android:height="86dp"
++                android:viewportWidth="86"
++                android:viewportHeight="86">
++                <path
++                    android:pathData="M56 39C56 46.1797 50.1797 52 43 52C35.8203 52 30 46.1797 30 39C30 31.8203 35.8203 26 43 26C50.1797 26 56 31.8203 56 39ZM60 39C60 48.3888 52.3888 56 43 56C33.6112 56 26 48.3888 26 39C26 29.6112 33.6112 22 43 22C52.3888 22 60 29.6112 60 39ZM27 60C26.4477 60 26 60.4477 26 61V63C26 63.5523 26.4477 64 27 64H59C59.5523 64 60 63.5523 60 63V61C60 60.4477 59.5523 60 59 60H27Z"
++                    android:fillColor="@android:color/black" />
++            </vector>
++        </inset>
++    </foreground>
++</adaptive-icon>
 diff --git a/res/drawable/shortcut_capture_mode.xml b/res/drawable/shortcut_capture_mode.xml
 index eccd7defb..4bbd83dc8 100644
 --- a/res/drawable/shortcut_capture_mode.xml

@@ -13,18 +13,18 @@ Signed-off-by: hoang1007 <hoangvuhuy1007@gmail.com>
  smali_classes2/miuix/os/Build.smali | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/smali_classes2/miuix/os/Build.smali b/smali_classes2/miuix/os/Build.smali
-index 1bc0f3c68..280ce66ac 100644
---- a/smali_classes2/miuix/os/Build.smali
-+++ b/smali_classes2/miuix/os/Build.smali
-@@ -39,7 +39,7 @@
-     .line 12
+diff --git a/smali/miuix/os/Build.smali b/smali/miuix/os/Build.smali
+index 8d2c28e6..ec2c4e4f 100644
+--- a/smali/miuix/os/Build.smali
++++ b/smali/miuix/os/Build.smali
+@@ -40,7 +40,7 @@
      .line 13
      .line 14
+     .line 15
 -    move-result v0
 +    const/4 v0, 0x1
  
-     .line 15
+     .line 16
      sput-boolean v0, Lmiuix/os/Build;->IS_INTERNATIONAL_BUILD:Z
 -- 
 2.49.1
